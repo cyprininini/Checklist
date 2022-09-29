@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1>Deployment Checklist
+        <div id="current_date">
+            <script>
+                date = new Date();
+                year = date.getFullYear();
+                month = date.getMonth() + 1;
+                day = date.getDate();
+                document.getElementById("current_date").innerHTML = day + "-" + month + "-" + year;
+            </script>
+        </div>
+    </h1>
+
+
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td,
+        th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>ITSM Setup:</th>
+                <th>Checklist:</th>
+                <th>Remarks: (if any)</th>
+            </tr>
+            <tr>
+                <td>Connect docking station to the notebook</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install firmware,update bios and drivers for notebook and docking station as listed in Deployment
+                    folder
+                </td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install Adobe CC</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install OneDrive for Windows</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install Pulse Secure</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install F5</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Add Computer to Domain: TP.EDU.SG</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Computer Name has been changed to: (Dept)(Username)(10A), eg ITS-LAYKHIM10A</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Move computer to OU</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Go to Control Panel -> Configuration Manager -> Site to check if the site code is "TAM". <br>
+                    If it is empty, click FIND SITE and "TAM" should appear. Click to run all actions under
+                    Configuration
+                    Manager</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Set up Email & Archives + Check Security Credential Prompt</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Configure Outlook and test with user's account</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Add Printer(s), \\printprd, \\printprd-eng (for ENG)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Ask User to login Adobe CC -install Adobe Acrobat DC</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Set Default Apps (IE browser, Outlook Mail and Adobe DC</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install VBOX only if user needs to use, move VBOX UPDate Dec to c:\temp, set memory 4096mb,<br>
+                    Computer Name (Dept)(Username)(VBA) eg, ITS-LAYKHIMVBA</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Check if user is a Finance Oracle(OFS) user, configuring of Java setting for OFS is required for OFS
+                    users</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Setup OneDrive, sync and install OneDrive latest version</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install Additional Software if there is any request</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>gpupdate /force (before test wifi login)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Able to access TP intranet</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Able to access External URL</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>gpupdate /force (before test wifi login)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install TP CalenderSync</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Wi-FI Setup and Testing</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Set up Bitlocker</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>manage-bde Bitlocker AD Backup / Check in system - manage-bde</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>If bitlocker recover key not captured in AD, check if the computer has been moved to OU. Type the
+                    following commands on user notebook<br>
+                    1)manage-bde -protectors -get C: -type recoverpassword<br>
+                    2)manage=bde -protectors -adbackup C: -id{insert the numberic ID here}</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Configure "WinSCP"</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install Symantec Endpoint if there is no other software to install</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Assist User to install Mobile RSA Apps</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Configure RSA Mobile Token For User</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Test User RSA using Pulse Secure</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Install EPM (CyberArk)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Delete Deployment folder from desktop</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Go through items in the loan form one by one with user</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>User sign off the items loaned (e-signature)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>User sign AUP (e-signature)</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>Clear quick access from Windows Explorer</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+            <tr>
+                <td>ITSM Staff clear IE browser cache and history</td>
+                <td> <input type="checkbox" id="item1" name="item1" required>
+                    <label for="item1">Complete</label>
+                </td>
+                <td> <input type="text" id="remarks" name="remarks" size="50%" style="border: none;"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit">
+
+        <!--<script> onclick="WriteToFile(this.form)"
+            function WriteToFile(passForm) {
+                var ExcelApp = new ActiveXObject("Excel.Application");
+            var ExcelSheet = new ActiveXObject("Excel.Sheet");
+            // Data is stored in the specificed cells  
+            ExcelSheet.ActiveSheet.Cells(1, 1).Value = "current_date";
+            ExcelSheet.ActiveSheet.Cells(2, 1).Value = "remarks"
+            // Save the sheet in specified directory
+            ExcelSheet.SaveAs("D:\Documents\Date(current_date).xlsx");
+            // Close Excel 
+            ExcelSheet.Application.Quit();
+            }
+
+        </script> -->
+</body>
+</form>
+
+</html>
